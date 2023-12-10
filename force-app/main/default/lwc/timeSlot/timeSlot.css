@@ -1,0 +1,21 @@
+/* timeslotParkingSpaceAllocation.css */
+.timeslot-allocation {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.parking-space-info {
+    margin-bottom: 20px;
+}
+.timeslot-grid {
+    display: grid;
+    grid-template-columns: repeat(28, 1fr); /* Assuming 15-minute intervals from 6 AM to 10 PM */
+    gap: 5px;
+}
+.available {
+    background-color: #8BC34A; /* Green for available */
+    cursor: pointer;
+}
+.occupied {
+    background-color: #FF5252; /* Red for occupied */
+    cursor: not-allowed;
+}

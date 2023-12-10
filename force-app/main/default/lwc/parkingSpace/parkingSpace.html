@@ -1,0 +1,62 @@
+<template>
+    <lightning-card title="Find Parking">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <lightning-combobox
+                    name="Select City"
+                    label="Select City"
+                    value={cityOptions}
+                    placeholder="Select city"
+                    options={cityOptions}
+                    onchange={cityChange}>
+                </lightning-combobox>
+            </div>
+            <div class="slds-col">
+                <lightning-combobox
+                    name="Select Place"
+                    label="Select Place"
+                    value={placeOptions}
+                    placeholder="Select Place"
+                    options={placeOptions}
+                    onchange={placeChange}>
+                </lightning-combobox>
+            </div>
+        </div>
+        
+
+        <!-- <div class="combox" style="float:inline-end;">
+            <label>
+                City:
+                <select value={cities} onchange={cityChange} style="margin-right:20px">
+                    <option value="">-- Select --</option>
+                    <template for:each={cityOptions} for:item="option">
+                        <option key={option.value} value={option.value}>{option.label}</option>
+                    </template>
+                </select>
+            </label>
+            <label>
+                Place:
+                <select value={place} onchange={placeChange}>
+                    <option value="">-- Select --</option>
+                    <template for:each={placeOptions} for:item="option">
+                        <option key={option.value} value={option.value}>{option.label}</option>
+                    </template>
+                </select>
+            </label>
+        </div> -->
+    </lightning-card>
+    <template if:true={showPlaceList}>
+        <div class="slds-grid slds-wrap" style="margin-right: 5cm; margin: 1cm;">
+            <template for:each={parkingLocation} for:item="list" for:index="i">
+                <div key={list.id} class="slds-col slds-size_1-of-3">
+                    <div class="slds-card" style="cursor: pointer;">
+                        <div class="slds-p-around_small">
+                           Name: <h1>{list.Name}</h1>
+                           Address: <p>{list.Address}</p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </template>
+</template>

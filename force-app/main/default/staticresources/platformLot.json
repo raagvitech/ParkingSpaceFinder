@@ -1,0 +1,71 @@
+{
+    "fields": 
+    [
+        {
+          "Name": "City",
+          "Value": "City",
+          "FieldType": "combobox"
+        },
+        {
+          "Name": "Place",
+          "Value": "Place",
+          "FieldType": "combobox"
+        }
+    
+       
+      ],
+      
+       
+      "ConcessionAuthority":{
+        "authority":[
+          {
+            "label" : "Bangalore",
+            "value" : "Bangalore"
+          },
+          {
+            "label" : "Hyderabad",
+            "value" : "Hyderabad"
+          }]
+        },
+      "cardType":{
+        "Bangalore":[
+          {
+            "label" : "Koramangala",
+            "value" : "Koramangala"
+          },
+          {
+            "label" : "Indiranagar",
+            "value" : "Indiranagar"
+          },
+          {
+            "label" : "M G Road",
+            "value" : "M G Road"
+          },
+          {
+            "label" : "Banashankari",
+            "value" : "Banashankari"
+          }
+        ],
+        "Hyderabad": [
+          {
+            "label" : "Gachibowli",
+            "value" : "Gachibowli"
+          },
+          {
+            "label" : "Shamshabad",
+            "value" : "Shamshabad"
+          },
+          {
+            "label" : "Kukatpally",
+            "value" : "Kukatpally"
+          },
+          {
+            "label" : "Banjara Hills",
+            "value" : "Banjara Hills"
+          }
+        ]
+      }
+      
+ 
+ 
+}

@@ -1,0 +1,17 @@
+<!-- timeslotParkingSpaceAllocation.html -->
+<template>
+    <div class="timeslot-allocation">
+        <div class="parking-space-info">
+            <p>Parking Space: Meenakshi Mall, Bangalore</p>
+        </div>
+        <div class="timeslot-grid">
+            <!-- Loop through timeslots and dynamically generate UI -->
+            <template for:each={timeslots} for:item="timeslot">
+                <!-- <div key={timeslot.id} class={timeslot.available ? 'available' : 'occupied'}
+                    onclick={handleTimeslotClick} data-timeslot={timeslot.id}>
+                    {timeslot.label}
+                </div> -->
+            </template>
+        </div>
+    </div>
+</template>
